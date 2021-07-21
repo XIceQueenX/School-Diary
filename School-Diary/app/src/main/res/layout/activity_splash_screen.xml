@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".activity.SplashScreen">
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="432dp"
+        android:layout_height="851dp"
+        android:layout_marginBottom="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/schoolvector" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="436dp"
+        android:layout_height="579dp"
+        android:layout_marginTop="600dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/schoolvector" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="171dp"
+        android:layout_height="137dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409"
+        app:srcCompat="@drawable/logoapp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="380dp"
+        android:fontFamily="@font/brlnsr"
+        android:text="School Diary"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

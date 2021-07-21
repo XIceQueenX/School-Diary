@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ToggleButton
+        android:id="@+id/dom"
+
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/toggle_bg"
+        android:checked="false"
+        android:textOff="DOM"
+        android:textOn="DOM" />
+
+    <ToggleButton
+        android:id="@+id/seg"
+        style="@style/toggleButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/toggle_bg"
+        android:checked="false"
+        android:textOff="SEG"
+        android:textOn="SEG" />
+
+    <ToggleButton
+        android:id="@+id/ter"
+        style="@style/toggleButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/toggle_bg"
+        android:checked="false"
+        android:textOff="TER"
+        android:textOn="TER" />
+
+    <ToggleButton
+        android:id="@+id/qua"
+        style="@style/toggleButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/toggle_bg"
+        android:checked="false"
+        android:textOff="QUA"
+        android:textOn="QUA" />
+
+    <ToggleButton
+        android:id="@+id/qui"
+        style="@style/toggleButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/toggle_bg"
+        android:checked="false"
+        android:textOff="QUI"
+        android:textOn="QUI" />
+
+    <ToggleButton
+        android:id="@+id/sex"
+        style="@style/toggleButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/toggle_bg"
+        android:checked="false"
+        android:textOff="SEX"
+        android:textOn="SEX" />
+
+    <ToggleButton
+        android:id="@+id/sab"
+        style="@style/toggleButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/toggle_bg"
+        android:checked="false"
+        android:textOff="SAB"
+        android:textOn="SAB" />
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projeto1.activity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="School Diary"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="AttDisciplina"></activity>
+        <activity
+            android:exported="true"
+            android:name=".TestesNotasActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".Disciplinas"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".AttTeste"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name="com.example.projeto1.Reset"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name="com.example.projeto1.Login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name="com.example.projeto1.Registar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".Menu"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".AttHorario"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".AddHora"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".AddTests"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".Testes"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".AttAnotacao"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".AddAnotacao"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".Anotacoes"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".AddDisciplina"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".AttTarefa"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".AddTarefas"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".HorarioEscolar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:exported="true"
+            android:name=".Tarefa"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E0288">
+
+    <me.jlurena.revolvingweekview.WeekView
+        android:id="@+id/weekView"
+        android:layout_width="389dp"
+        android:layout_height="744dp"
+        android:background="@color/cinzaretangulo"
+        android:elevation="100dp"
+        app:autoLimitTime="false"
+        app:columnGap="8dp"
+        app:dayBackgroundColor="#05000000"
+        app:dropListenerEnabled="true"
+        app:eventCornerRadius="5dp"
+        app:eventTextColor="@color/cinza"
+        app:headerColumnBackground="@color/cinzaretangulo"
+        app:headerColumnPadding="8dp"
+        app:headerColumnTextColor="@color/toolbar_text"
+        app:headerRowBackgroundColor="@color/cinzaretangulo"
+        app:headerRowPadding="12dp"
+        app:hourHeight="60dp"
+        app:hourSeparatorColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxTime="22"
+        app:minOverlappingMinutes="5"
+        app:minTime="7"
+        app:newEventTimeResolutionInMinutes="15"
+        app:noOfVisibleDays="5"
+        app:pastBackgroundColor="@color/cinza"
+        app:pastWeekendBackgroundColor="@color/cinzaretangulo"
+        app:textSize="12sp"
+        app:timeColumnResolution="60"
+        app:todayBackgroundColor="#1848adff"
+        app:todayHeaderTextColor="@color/purple_700" />
+
+    <ImageView
+        android:id="@+id/backbutton11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:elevation="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="100dp"
+        android:elevation="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/weekView"
+        app:layout_constraintEnd_toEndOf="@+id/weekView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/weekView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectanglemain" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/brlnsr"
+        android:text="Horário Escolar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_btnhorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="#FFFFFF"
+        app:backgroundTint="@color/roxoescuro"
+        app:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_add" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_btnhorario3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:backgroundTint="@color/purple_500"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="#FFFFFF"
+        android:visibility="gone"
+        app:backgroundTint="@color/roxoescuro"
+        app:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_subject_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_btnhorario4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="@color/purple_500"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="#FFFFFF"
+        android:visibility="gone"
+        app:backgroundTint="@color/roxoescuro"
+        app:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_schedule_24" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Button"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

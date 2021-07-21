@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AttDisciplina">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="371dp"
+        android:layout_height="742dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816"
+        app:srcCompat="@drawable/retactanglev2" />
+
+    <EditText
+        android:id="@+id/addteacher2"
+        android:layout_width="356dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:fontFamily="@font/gothic"
+        android:hint="Professor(a)"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnattdisciplina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="#FFFFFF"
+        app:backgroundTint="@color/roxoescuro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_done" />
+
+    <EditText
+        android:id="@+id/attsubjects"
+        android:layout_width="309dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginBottom="9dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/gothic"
+        android:hint="Disciplina"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.69"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retanguloroxo" />
+
+    <ImageView
+        android:id="@+id/backbutton16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:elevation="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="361dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="53dp"
+        android:fontFamily="@font/brlnsr"
+        android:text="Atualizar Disciplina"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/addtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/color2"
+        android:layout_width="232dp"
+        android:layout_height="38dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="40dp"
+        tools:visibility="gone" />
+
+    <Button
+        android:id="@+id/attcor"
+        android:layout_width="26dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/cordisciplina"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/attsubjects"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/attsubjects" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="349dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/brlnsr"
+        android:text="*Para associar uma cor disciplina, pressione sobre o círculo."
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/attsubjects" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

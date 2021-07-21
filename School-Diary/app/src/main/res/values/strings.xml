@@ -1,0 +1,27 @@
+<resources xmlns:fontFamily="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">PAP</string>
+
+    <string name="action_today">Today</string>
+    <string name="action_day_view">Day view</string>
+    <string name="action_three_day_view">3 day view</string>
+    <string name="action_week_view">Week view</string>
+    <string name="title_activity_basic">Basic Example</string>
+    <string name="drag_me">Drag Me</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string name="title_activity_nav_drawer">nav_drawer</string>
+
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+</resources>

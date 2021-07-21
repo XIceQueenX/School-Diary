@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Button.Toggle" parent="android:Widget">
+        <item name="android:background">@drawable/toggle_bg</item>
+    </style>
+
+    <style name="toggleButton" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+        <item name="android:textColor">@drawable/selectday</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="NewFontStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/gothic</item>
+        <item name="android:listDivider">@android:color/transparent</item>
+    </style>
+
+
+
+    <style name="MyThemeOverlay.MaterialComponents.MaterialAlertDialog" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MyApp.Dialog.Rounded</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MyApp.Dialog.Rounded" parent="">
+        <item name="colorSurface">@font/gothic</item>'
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="TextAppearance44">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/gothic</item>
+    </style>
+
+
+</resources>

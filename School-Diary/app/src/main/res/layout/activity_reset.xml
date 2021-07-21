@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".Reset">
+
+    <ImageView
+        android:id="@+id/backbutton13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:elevation="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="309dp"
+        android:layout_marginBottom="175dp"
+        android:elevation="1dp"
+        android:fontFamily="@font/brlnsr"
+        android:text="Redefinição de Senha"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="533dp"
+        android:layout_height="698dp"
+        android:layout_marginBottom="440dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fundo" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="393dp"
+        android:layout_height="559dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/rectanglemain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="348dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="364dp"
+        android:fontFamily="@font/gothic"
+        android:text="Introduza o email associado á conta, de seguida insira o código recebido no seu email abaixo para prosseguir á redefinição de senha."
+        android:textAlignment="viewStart"
+        android:textColor="#743F51B5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/reset_email"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="284dp"
+        android:background="@drawable/campologin"
+
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/gothic"
+
+        android:hint="Email"
+        android:inputType="text"
+        android:padding="10dip"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/reset_enviar"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/btnenter"
+        android:fontFamily="@font/brlnsr"
+        android:text="Enviar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/reset_codigo"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="284dp"
+        android:background="@drawable/campologin"
+
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/gothic"
+
+        android:hint="Código"
+        android:inputType="text"
+        android:padding="10dip"
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+
+        android:id="@+id/reset_password"
+        android:layout_width="306dp"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/campologin"
+
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/gothic"
+
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="10dip"
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/verificacodigo"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="112dp"
+        android:background="@drawable/btncadastrar"
+        android:fontFamily="@font/brlnsr"
+        android:text="Guardar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.AddAnotacao">
+
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/gothic"
+        android:text="Selecione uma Disciplina abaixo:"
+        android:textColor="#959292"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView48"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView48"
+        android:layout_width="345dp"
+        android:layout_height="35dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/addsubject2"
+        app:layout_constraintTop_toTopOf="@+id/addsubject2"
+        app:srcCompat="@drawable/spinnercontorno" />
+
+    <ImageView
+        android:id="@+id/addsubjectnote"
+        android:layout_width="371dp"
+        android:layout_height="742dp"
+        android:layout_marginTop="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retactanglev2" />
+
+    <Spinner
+        android:id="@+id/addsubject2"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:elevation="100dp"
+        android:fontFamily="@font/gothic"
+        android:popupBackground="@drawable/spinner"
+        android:spinnerMode="dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_txt"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retanguloroxo" />
+
+    <ImageView
+        android:id="@+id/backbutton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:elevation="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/brlnsr"
+        android:text="Adicionar Anotação"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/content_txt"
+        android:layout_width="343dp"
+        android:layout_height="532dp"
+        android:layout_marginTop="237dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/gothic"
+        android:gravity="start|top"
+        android:hint="Conteúdo"
+        android:inputType="textMultiLine"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/title_txt"
+        android:layout_width="340dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="92dp"
+        android:background="@null"
+        android:ems="10"
+        android:fontFamily="@font/gothic"
+        android:hint="Insira o título"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addanotacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="#FFFFFF"
+        app:backgroundTint="@color/roxoescuro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_done" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

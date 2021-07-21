@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AttHorario">
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/gothic"
+        android:text="Selecione uma Disciplina abaixo:"
+        android:textColor="#959292"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/editsubjecthour"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retanguloroxo" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="371dp"
+        android:layout_height="742dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816"
+        app:srcCompat="@drawable/retactanglev2" />
+
+    <TextView
+        android:id="@+id/editdatefinal"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="508dp"
+        android:elevation="1dp"
+        android:ellipsize="start"
+        android:fontFamily="@font/gothic"
+        android:gravity="center"
+        android:hint="Hora Final"
+
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/editdateinitial"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="562dp"
+        android:elevation="1dp"
+        android:ellipsize="start"
+        android:fontFamily="@font/gothic"
+        android:gravity="center"
+        android:hint="Hora Inicial"
+
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/editsubjecthour"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="656dp"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:fontFamily="@font/gothic"
+        android:popupBackground="@drawable/spinner"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/backbutton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:elevation="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/brlnsr"
+        android:text="Atualizar Hora"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/atthour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="#FFFFFF"
+        app:backgroundTint="@color/roxoescuro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_done" />
+
+    <include
+        android:id="@+id/adddaypickerhour"
+        layout="@layout/daypicker"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/editdateinitial"
+        app:layout_constraintEnd_toEndOf="parent"></include>
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="345dp"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/editsubjecthour"
+        app:layout_constraintStart_toStartOf="@+id/editsubjecthour"
+        app:layout_constraintTop_toTopOf="@+id/editsubjecthour"
+        app:srcCompat="@drawable/spinnercontorno" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

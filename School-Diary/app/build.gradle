@@ -1,0 +1,95 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.projeto1"
+        minSdkVersion 28
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildscript {
+        ext {
+            minSdkVersion = 28
+            targetSdkVersion = 28
+            compileSdkVersion = 28
+
+            // Support Libraries
+            supportLibraryVersion = '28.0.0'
+            buildToolsVersion = '29.0.2'
+        }
+        repositories {
+            jcenter()
+            maven {
+                url 'https://maven.google.com/'
+                name 'Google'
+            }
+            google()
+        }
+        dependencies {
+            classpath 'com.android.tools.build:gradle:4.2.0'
+
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.example.projeto1'
+}
+
+dependencies {
+
+    implementation 'androidx.work:work-runtime-ktx:2.7.0'
+    androidTestImplementation "androidx.test.ext:junit:1.1.3"
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.3.5'
+    implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'me.jlurena:revolvingweekview:3.0.0'
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+    implementation "com.makeramen:roundedimageview:2.3.0"
+    implementation project(':customcalendarlibrary')
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'petrov.kristiyan:colorpicker-library:1.1.10'
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    implementation 'it.xabaras.android:recyclerview-swipedecorator:1.1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+
+    /*
+     * Worker dependencies
+     * */
+    implementation "androidx.work:work-runtime:2.5.0"
+
+    /*
+     * Email dependencies
+     */
+
+    implementation 'com.sun.mail:android-mail:1.6.3'
+    implementation 'com.sun.mail:android-activation:1.6.3'
+
+}

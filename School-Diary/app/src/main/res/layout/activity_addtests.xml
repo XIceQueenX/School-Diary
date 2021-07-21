@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity.AddTarefas">
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/gothic"
+        android:text="Selecione uma Disciplina abaixo:"
+        android:textColor="#959292"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/addsubjecttest"
+        app:layout_constraintStart_toStartOf="@+id/addsubjecttest" />
+
+    <Spinner
+        android:id="@+id/addsubjecttest"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="552dp"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:fontFamily="@font/gothic"
+        android:popupBackground="@drawable/spinner"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/addtitletest"
+        android:layout_width="340dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="88dp"
+        android:background="@null"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/gothic"
+        android:hint="Titulo"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adddatetest"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="648dp"
+        android:elevation="10dp"
+        android:ellipsize="start"
+        android:fontFamily="@font/gothic"
+        android:gravity="center"
+        android:hint="Adicione uma data"
+
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnaddta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="#FFFFFF"
+        app:backgroundTint="@color/roxoescuro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_done" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="371dp"
+        android:layout_height="742dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816"
+        app:srcCompat="@drawable/retactanglev2" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="345dp"
+        android:layout_height="35dp"
+        app:layout_constraintStart_toStartOf="@+id/addsubjecttest"
+        app:layout_constraintTop_toTopOf="@+id/addsubjecttest"
+        app:srcCompat="@drawable/spinnercontorno" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="196dp"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/retanguloroxo" />
+
+    <ImageView
+        android:id="@+id/backbutton21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:elevation="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="361dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/brlnsr"
+        android:text="Adicionar Teste"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="500dp"
+        android:checked="false"
+        android:fontFamily="@font/gothic"
+        android:switchPadding="20dp"
+        android:text="Receber notificação para estudo?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- <Spinner
+        android:id="@+id/addsubjecttest"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="554dp"
+        android:clickable="true"
+        android:fontFamily="@font/gothic"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" /> -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

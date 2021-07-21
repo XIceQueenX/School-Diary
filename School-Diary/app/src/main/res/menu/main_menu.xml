@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:background= "@drawable/splash">
+
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="Principal"   android:id="@+id/titlevisu" >
+            <menu>
+                <item
+                    android:id="@+id/nav_horario"
+                    android:fontFamily="@font/gothic"
+                    android:icon="@drawable/ic_baseline_schedule_24"
+                    android:title="Horário Escolar" />
+                <item
+                    android:id="@+id/nav_tarefa"
+                    android:icon="@drawable/ic_baseline_book_24"
+                    android:fontFamily="@font/gothic"
+                    android:title="Tarefas" />
+                <item
+                    android:id="@+id/nav_teste"
+                    android:icon="@drawable/ic_baseline_workspace_premium_24"
+                    android:fontFamily="@font/gothic"
+                    android:title="Testes" />
+                <item
+                    android:id="@+id/nav_anotacao"
+                    android:icon="@drawable/ic_baseline_edit_note_24"
+                    android:fontFamily="@font/gothic"
+                    android:title="Anotacoes" />
+
+
+            </menu>
+        </item>
+    </group>
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="Visualizar" android:id="@+id/visu">
+            <menu>
+
+                <item
+                    android:id="@+id/subjects"
+                    android:icon="@drawable/ic_baseline_school_24"
+                    android:fontFamily="@font/gothic"
+                    android:title="Disciplinas" />
+                <item
+                    android:id="@+id/tests"
+                    android:icon="@drawable/ic_baseline_domain_verification_24"
+                    android:fontFamily="@font/gothic"
+                    android:title="Todos os Testes" />
+
+                <item
+                    android:title="" android:enabled="false"/>
+                <item
+                    android:title=""  android:enabled="false" />
+                <item
+                    android:title=""  android:enabled="false" />
+                <item
+                    android:title=""  android:enabled="false" />
+                <item
+                    android:title=""  android:enabled="false"/>
+                <item
+                    android:title=""  android:enabled="false"/>
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_baseline_logout_24"
+                    android:fontFamily="@font/gothic"
+                    android:title="Sair" />
+
+
+
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

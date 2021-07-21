@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="10dp"
+    tools:context=".activity.AddHora">
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="345dp"
+        android:layout_height="35dp"
+        android:background="@drawable/spinnercontorno"
+        android:elevation="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/addsubjecthour"
+        app:layout_constraintStart_toStartOf="@+id/addsubjecthour"
+        app:layout_constraintTop_toTopOf="@+id/addsubjecthour" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retanguloroxo" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="371dp"
+        android:layout_height="742dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816"
+        app:srcCompat="@drawable/retactanglev2" />
+
+    <TextView
+        android:id="@+id/adddatefinal"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="500dp"
+        android:ellipsize="start"
+        android:fontFamily="@font/gothic"
+        android:gravity="center"
+        android:hint="Hora Final"
+        android:lineSpacingExtra="8sp"
+
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/sala"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="448dp"
+        android:background="@android:color/transparent"
+        android:ellipsize="start"
+        android:fontFamily="@font/gothic"
+        android:gravity="center"
+        android:hint="Sala"
+
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/adddateinitial"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="552dp"
+        android:ellipsize="start"
+        android:fontFamily="@font/gothic"
+        android:gravity="center"
+        android:hint="Hora Inicial"
+        android:lineSpacingExtra="8sp"
+
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/addsubjecthour"
+        android:layout_width="340dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="656dp"
+        android:clickable="true"
+        android:fontFamily="@font/gothic"
+        android:popupBackground="@drawable/spinner"
+        android:prompt="@string/menu_home"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/backbutton10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:elevation="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/brlnsr"
+        android:text="Adicionar Aula"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/edithour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="#FFFFFF"
+        app:backgroundTint="@color/roxoescuro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_done" />
+
+    <include
+        android:id="@+id/adddaypickerhour"
+        layout="@layout/daypicker"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addsubjecthour"></include>
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/gothic"
+        android:text="Selecione uma Disciplina abaixo:"
+        android:textColor="#959292"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView40"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
