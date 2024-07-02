@@ -5,6 +5,9 @@ The School Diary app is designed to help students manage their academic schedule
 
 **Note:** This is my first app ever, developed as part of my Professional Course in Technical Management and Programming of Information Systems (2021).
 
+## Screenshots
+![App Photos](SchoolDiary.png)
+
 ## Features
 - User Authentication (Registration and Login)
 - Manage School Schedule
@@ -29,6 +32,5 @@ The School Diary app is designed to help students manage their academic schedule
 5. **Notifications**: Get alerts for tests 7, 3, and 0 days before the test date.
 6. **View Grades**: Enter test results to calculate and view your subject averages.
 
-## Screenshots
-![App Photos](SchoolDiary.png)
+
 
