@@ -3,7 +3,7 @@
 ## Overview
 The School Diary app is designed to help students manage their academic schedules, tasks, and grades effectively. Developed using Java and SQLite, this app provides functionalities like logging in, managing schedules, adding tasks, and tracking grades.
 
-**Note:** This is my first app ever, developed as part of my Professional Course in Technical Management and Programming of Information Systems.
+**Note:** This is my first app ever, developed as part of my Professional Course in Technical Management and Programming of Information Systems (2021).
 
 ## Features
 - User Authentication (Registration and Login)
