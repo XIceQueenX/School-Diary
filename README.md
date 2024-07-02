@@ -30,5 +30,5 @@ The School Diary app is designed to help students manage their academic schedule
 6. **View Grades**: Enter test results to calculate and view your subject averages.
 
 ## Screenshots
-
+![App Photos](SchoolDiary.png)
 
